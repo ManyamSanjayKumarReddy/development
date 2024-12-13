@@ -1,12 +1,11 @@
 runtime: python39
 
-env: 
+env:
   variables:
-    STREAMLIT_HOST: '0.0.0.0'  # Allow all origins to connect
-    STREAMLIT_PORT: $PORT        # Use the port provided by GAE
+    GOOGLE_API_KEY: "AIzaSyA4oesLkCsb1rJ3Cpy2-WALB4SQ5vnobbg"
 
-service:   # Replace with your desired service name
+service: your-service-name
 
 handlers:
 - url: /.*
-  script: app.py  # Replace with the name of your Streamlit app file
+  script: app.py
