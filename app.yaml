@@ -1,7 +1,6 @@
-runtime: python39"
+runtime: python39
 
 service: gclouddeploy
-
 handlers:
 - url: /.*
   script: main.py
