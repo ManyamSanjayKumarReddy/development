@@ -1,0 +1,12 @@
+runtime: python39
+
+env: 
+  variables:
+    STREAMLIT_HOST: '0.0.0.0'  # Allow all origins to connect
+    STREAMLIT_PORT: $PORT        # Use the port provided by GAE
+
+service:   # Replace with your desired service name
+
+handlers:
+- url: /.*
+  script: app.py  # Replace with the name of your Streamlit app file
