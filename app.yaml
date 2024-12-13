@@ -1,5 +1,0 @@
-runtime: python39
-
-handlers:
-- url: /.*
-  script: gunicorn -b :8501 main:app
