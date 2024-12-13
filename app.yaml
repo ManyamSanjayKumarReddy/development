@@ -1,11 +1,7 @@
-runtime: python39
+runtime: python39"
 
-env:
-  variables:
-    GOOGLE_API_KEY: "AIzaSyA4oesLkCsb1rJ3Cpy2-WALB4SQ5vnobbg"
-
-service: your-service-name
+service: gclouddeploy
 
 handlers:
 - url: /.*
-  script: app.py
+  script: main.py
